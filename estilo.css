@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0;
+	min-height: 200vh;
+  background-image: url('https://image.ibb.co/icbLMF/ep_naturalblack.png');
+}
+
+main {
+	width: 100%;
+	flex: 1;
+	text-align: center;
+}
+
+
+header, footer {
+	color: white;
+	background: #FF3E96;
+	width: 100%;
+	padding: 30px;
+	text-align: center;
+	font-family: Courier, "Lucida Console", monospace;
+}
+
+header {
+	margin-bottom: 15px;
+}
+
+div {
+	max-width: 500px;
+	width: 80%;
+	min-height: 300px;
+	display: block;
+	margin: auto;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+img[data-src] {
+	opacity: 0;
+	transform: scale(3);
+}
+img[src] {
+	opacity: 1;
+	transform: scale(1);
+	transition: .4s ease-in-out;
+}
